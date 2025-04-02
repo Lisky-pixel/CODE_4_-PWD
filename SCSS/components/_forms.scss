@@ -1,0 +1,27 @@
+.form-group {
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        background-color: $light-bg;
+    }
+
+    textarea {
+        min-height: 15rem;
+        resize: vertical;
+    }
+}
+
+.search-form {
+    @extend .form-group;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+* {
+    font-family: $font-nunito;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+    &::selection {
+        background-color: $main-color;
+        color: $white;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    
+    &::-webkit-scrollbar {
+        width: 1rem;
+        height: 0.5rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+    }
+}
+
+body{
+    background-color: $light-bg;
+    padding-left: 30rem;
+}
+
+body.dark{
+    $light-bg: #333333;
+    $light-bg: #333;
+    $main-color: #fff;
+    $white: #222;
+    $border:.1rem solid rgba(255,255,255,.2);
+}
+
+body.active{
+    padding-left: 0;
+}
+
+section {
+    padding: $base-padding;
+    margin: 0 auto;
+    max-width: 1200px;
+}

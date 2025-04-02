@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>watch</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/EDLEARN-LOGO.png" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <div class="logo">
+          <a href="Dashboard.html"
+            ><img
+              src="images/Code PLWD.png"
+              width="80px"
+              height="80px"
+              alt="PWD Logo"
+              style="margin-top: -27px"
+              ;
+              alt="Code 4 PWD Logo"
+          /></a>
+        </div>
+
+        <form action="search.html" method="post" class="search-form">
+          <input
+            type="text"
+            name="search_box"
+            required
+            placeholder="search courses..."
+            maxlength="100"
+          />
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+        </div>
+
+        <div class="profile">
+          <img src="images/pic-5.jpg" class="image" alt="" />
+          <h3 class="name">Nana Koramah</h3>
+          <p class="role">student</p>
+          <a href="profile.html" class="btn">view profile</a>
+          <div class="flex-btn">
+            <a href="index.html" class="option-btn">logout</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile">
+        <img src="images/pic-5.jpg" class="image" alt="" />
+        <h3 class="name">Nana Koramah</h3>
+        <p class="role">student</p>
+        <a href="profile.html" class="btn">view profile</a>
+      </div>
+
+      <nav class="navbar">
+        <a href="dashboard.html"
+          ><i class="fas fa-home"></i><span>Dashboard</span></a
+        >
+        <a href="courses.html"
+          ><i class="fas fa-graduation-cap"></i><span>Courses</span></a
+        >
+        <a href="teachers.html"
+          ><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a
+        >
+        <a href="contact.html"
+          ><i class="fas fa-headset"></i><span>Contact us</span></a
+        >
+      </nav>
+    </div>
+
+    <section class="watch-video">
+      <div class="video-container">
+        <div class="video">
+          <video src="" controls poster="" id="video"></video>
+        </div>
+        <h3 class="title"></h3>
+        <div class="info">
+          <p class="date"><i class="fas fa-calendar"></i><span></span></p>
+          <p class="date"><i class="fas fa-heart"></i><span></span></p>
+        </div>
+        <div class="tutor">
+          <img src="" alt="" id="tutor-image" />
+          <div>
+            <h3 id="tutor-name"></h3>
+            <span></span>
+          </div>
+        </div>
+        <form action="" method="post" class="flex">
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+          <button><i class="far fa-heart"></i><span>like</span></button>
+        </form>
+        <p class="description"></p>
+      </div>
+    </section>
+
+    <section class="comments">
+      <h1 class="heading">comments</h1>
+
+      <form action="" class="add-comment">
+        <h3>add comments</h3>
+        <textarea
+          name="comment_box"
+          placeholder="enter your comment"
+          required
+          maxlength="1000"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input
+          type="submit"
+          value="add comment"
+          class="inline-btn"
+          name="add_comment"
+        />
+      </form>
+
+      <div class="box-container" id="comments-container"></div>
+    </section>
+
+    <footer class="footer">
+      <span
+        >Created By <a href="https://github.com/Lisky-pixel">Code 4 PWD</a> |
+        <span class="far fa-copyright"></span> 2025 All rights reserved.</span
+      >
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/auth_handler.js"></script>
+    <script src="js/enrollment.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="js/watch-video.js"></script>
+  </body>
+</html>

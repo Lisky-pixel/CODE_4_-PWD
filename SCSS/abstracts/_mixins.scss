@@ -1,0 +1,46 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin grid-layout($min-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+    gap: 1.5rem;
+}
+
+@mixin respond-to($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+// abstracts/_mixins.scss
+@mixin triangle($size, $color, $direction) {
+    width: 0;
+    height: 0;
+    border: $size solid transparent;
+
+    @if $direction == "up" {
+        border-bottom-color: $color;
+        border-top: 0;
+    } @else if $direction == "down" {
+        border-top-color: $color;
+        border-bottom: 0;
+    } @else if $direction == "left" {
+        border-right-color: $color;
+        border-left: 0;
+    } @else if $direction == "right" {
+        border-left-color: $color;
+        border-right: 0;
+    }
+}
+
+// abstracts/_mixins.scss

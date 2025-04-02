@@ -1,0 +1,691 @@
+@import url("https://fonts.cdnfonts.com/css/nulshock");
+
+/* Global Styles */
+:root {
+  --primary-color: #4285f4;
+  --text-color: black;
+  --secondary-color: #f46524;
+  --dark-color: #1f2937;
+  --light-color: #f9fafb;
+  --gray-color: #6b7280;
+  --success-color: #757575;
+  --warning-color: #f59e0b;
+  --font-family: "Poppins";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins";
+}
+
+.xxx {
+  width: 100%;
+  height: 85vh;
+  background-image: url("images/heroimg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+nav {
+  width: 100%;
+  height: 12vh;
+  z-index: 1;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+}
+
+a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+a:hover {
+  color: #023047;
+}
+
+ul button {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 1.3rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header {
+  padding-top: 5rem;
+}
+
+.learn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+
+.hero h1 {
+  font-size: 8.7rem;
+  font-weight: 600;
+  font-family: "Nulshock", sans-serif;
+  line-height: 7.4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 65%;
+  color: var(--text-color);
+}
+
+.hero p {
+  font-size: 2.7rem;
+  font-weight: 200;
+  width: 40%;
+  line-height: 3.5rem;
+}
+
+.hero button {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: 0.05rem solid gray;
+  width: 30rem;
+  height: 7rem;
+  margin-top: 2.6rem;
+  border-radius: 5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#Get {
+  margin-left: 5rem;
+}
+
+.hero button:hover {
+  color: #023047;
+  background-color: #fff;
+  border: 0.05rem solid gray;
+}
+
+.marquee-container {
+  display: flex;
+  gap: 10rem;
+}
+
+.Trusted div h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.Trusted-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.About-h1 {
+  margin-top: 5rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.About {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.About div {
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: -25rem;
+  font-size: 2.5rem;
+  width: 44%;
+  font-weight: lighter;
+}
+
+.About div button {
+  margin-top: 2.3rem;
+  width: 35rem;
+  height: 6rem;
+  font-size: 2.3rem;
+  border: none;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.About div button:hover {
+  color: #023047;
+  background-color: #fff;
+  border: 0.05rem solid gray;
+}
+
+.history {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--success-color);
+  min-height: 50vh;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.history-content h2 {
+  margin-top: 1.5rem;
+}
+
+.history-content p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 15.4rem;
+}
+
+.Unique {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7rem;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50rem;
+  margin-top: 3rem;
+}
+
+.offers p {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.offers ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.offers ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.offers ul li::before {
+  content: "•";
+  margin-right: 0.5rem;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.Join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.Join p {
+  font-size: 2rem;
+  width: 52rem;
+}
+
+.Join button {
+  width: 40rem;
+  height: 6.5rem;
+  color: #fff;
+  background-color: var(--secondary-color);
+  margin-top: 3rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.Join button:hover {
+  color: #023047;
+  background-color: #fff;
+  border: 0.05rem solid gray;
+}
+
+.color {
+  background-color: var(--success-color);
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  min-height: 80vh;
+}
+
+.Overview {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Overview p {
+  font-size: 1.8rem;
+  width: 62rem;
+  font-weight: lighter;
+  margin: 0 auto;
+}
+
+.curriculum {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.curriculum-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 25rem;
+  height: 30rem;
+  padding: 3rem;
+  gap: 1.5rem;
+  flex: 0 0 20.1%;
+  margin-top: 3rem;
+}
+
+.curriculum-content p::before {
+  content: "•";
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.curriculum-content h2 {
+  width: 16rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.curriculum-content h3 {
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.curriculum-content h4 {
+  margin-top: 3rem;
+  font-weight: 900;
+}
+
+.Courses {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.Courses h1 {
+  color: var(--text-color);
+}
+
+.Download {
+  background-color: var(--success-color);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 30vh;
+}
+
+.Ready {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Ready p {
+  font-size: 1.4rem;
+}
+
+.Ready div h4 {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.News {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  min-height: 130vh;
+}
+
+.News-sub {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.News p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  width: 74rem;
+}
+
+.More {
+  display: flex;
+  gap: 12rem;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.product,
+.Cultural,
+.partner {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--success-color);
+  border-radius: 1.5rem;
+  color: #fff;
+  width: 29rem;
+  height: 35rem;
+}
+
+.product h2,
+.Cultural h2,
+.partner h2 {
+  width: 18rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+}
+
+.product p,
+.Cultural p,
+.partner p {
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  width: 19rem;
+  font-size: 1.2rem;
+}
+
+.product img,
+.Cultural img,
+.partner img {
+  margin-left: 2rem;
+  margin-top: 1.6rem;
+}
+
+.Time {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  color: white;
+  margin-left: -2rem;
+}
+
+.Event {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--success-color);
+  border-radius: 2.8rem;
+  color: #fff;
+  margin-top: 5rem;
+  width: 80rem;
+  height: 60rem;
+  gap: -3rem;
+}
+.H2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.P1 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 100;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-style: italic;
+}
+
+.Events {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--success-color);
+  border-radius: 1.5rem;
+  color: #fff;
+}
+
+.Events-content,
+.Events-content-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  color: #023047;
+  width: 30rem;
+}
+
+.Events-content h2,
+.Events-content-1 h2 {
+  width: 20rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+}
+
+.Events-content p,
+.Events-content-1 p {
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  width: 22rem;
+  font-size: 1.3rem;
+}
+
+.Events-content img,
+.Events-content-1 img {
+  margin-left: 2rem;
+  margin-top: 1.6rem;
+}
+
+.Here {
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #023047;
+  margin-left: -1.7rem;
+}
+
+.Here a {
+  font-size: 1.5rem;
+  color: #023047;
+}
+
+.Student {
+  margin-top: 3rem;
+}
+
+.Student h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.Student p {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 100;
+  color: #023047;
+}
+
+.Girl {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.Girl h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+span {
+  display: block;
+  text-align: center;
+  width: 71.5rem;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+footer {
+  background: var(--success-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10rem;
+  height: 50vh;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+input {
+  border: none;
+  border-radius: 6rem;
+  width: 25rem;
+  height: 5rem;
+}
+
+.input-arrow {
+  background-color: var(--secondary-color);
+  border-radius: 4rem;
+  margin-left: -6rem;
+  margin-top: 0.6rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.Resource h2 {
+  font-size: 2.1rem;
+  width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Resource div {
+  display: flex;
+  gap: 2rem;
+}
+
+.Explore {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Explore a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.Quick {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Quick a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  font-size: 1.5rem;
+}
+
+.xyz {
+  font-size: 1.9rem;
+}
+
+.Contact-news {
+  width: 24rem;
+  font-size: 1rem;
+}
+
+.copy {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  padding-top: 0.6rem;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background-color: var(--secondary-color);
+}

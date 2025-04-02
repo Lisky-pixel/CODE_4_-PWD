@@ -1,0 +1,21 @@
+.main-nav {
+    ul {
+        display: flex;
+        list-style: none;
+    
+        li {
+            margin-right: 2rem;
+    
+            a {
+                color: $black;
+                font-size: 1.6rem;
+                padding: 1rem;
+                border-radius: 0.5rem;
+        
+                &:hover {
+                    background: $light-bg;
+                }
+            }
+        }
+    }
+}

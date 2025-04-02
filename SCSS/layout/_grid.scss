@@ -1,0 +1,67 @@
+.home-grid {
+    .box-container {
+        @include grid-layout(27.5rem);
+        justify-content: center;
+        align-items: flex-start;
+    
+        .box {
+            background-color: $white;
+            border-radius: 1rem;
+            padding: 2rem;
+    
+            .title {
+            font-size: 2rem;
+            color: $black;
+            text-transform: capitalize;
+            }
+    
+            .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+    
+                a {
+                    background-color: $light-bg;
+                    border-radius: 0.5rem;
+                    padding: 1rem 1.5rem;
+                    font-size: 1.5rem;
+        
+                    i {
+                    margin-right: 1rem;
+                    color: $black;
+                    }
+        
+                    span {
+                    color: $light-color;
+                    }
+        
+                    &:hover {
+                    background-color: $black;
+        
+                        span, i {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+    
+            .tutor {
+            padding: 1rem 0;
+            font-size: 1.8rem;
+            color: $light-color;
+            line-height: 2;
+            }
+    
+            .likes {
+            color: $light-color;
+            font-size: 1.7rem;
+            margin-top: 1.5rem;
+    
+            span {
+                color: $main-color;
+            }
+            }
+        }
+    }
+}

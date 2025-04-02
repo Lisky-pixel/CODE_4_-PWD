@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "id": "1742860643106",
+      "email": "benji.chukwu.20@gmail.com",
+      "password": "Marvelous.45",
+      "firstName": "Marvelous",
+      "lastName": "Nelson",
+      "createdAt": "2025-03-24T23:57:23.106Z",
+      "enrolledCourses": [
+        4
+      ]
+    },
+    {
+      "id": "1742862083378",
+      "firstName": "Nana",
+      "lastName": "Koramah",
+      "email": "n.abeasi@alustudent.com",
+      "password": "Password.123",
+      "confirmPassword": "Password.123",
+      "createdAt": "2025-03-25T00:21:23.378Z",
+      "enrolledCourses": []
+    },
+    {
+      "id": "1742930239936",
+      "firstName": "Benjamin",
+      "lastName": "Nelson",
+      "email": "m.nelson@alustudent.com",
+      "password": "Benjamin.123",
+      "confirmPassword": "Benjamin.123",
+      "createdAt": "2025-03-25T19:17:19.936Z",
+      "enrolledCourses": []
+    },
+    {
+      "id": "1742987106802",
+      "firstName": "Chika",
+      "lastName": "Nelson",
+      "email": "chicnel20@gmail.com",
+      "password": "Chicnel20@",
+      "confirmPassword": "Chicnel20@",
+      "createdAt": "2025-03-26T11:05:06.802Z",
+      "enrolledCourses": []
+    },
+    {
+      "id": 1743596720426,
+      "firstName": "lucy",
+      "lastName": "lucy",
+      "email": "jockeynasty@gmail.com",
+      "password": "Password.123",
+      "confirmPassword": "Password.123",
+      "createdAt": "2025-04-02T12:25:20.426Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "complete HTML tutorial",
+      "tutor": "William Brown",
+      "tutorImage": "images/pic-2.jpg",
+      "thumbnail": "images/thumb-1.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "2",
+      "title": "complete CSS tutorial",
+      "tutor": "Roselyn Mensah",
+      "tutorImage": "images/pic-3.jpg",
+      "thumbnail": "images/thumb-2.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "3",
+      "title": "complete JS tutorial",
+      "tutor": "Owureku Abeasi",
+      "tutorImage": "images/pic-4.jpg",
+      "thumbnail": "images/thumb-3.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "4",
+      "title": "complete Boostrap tutorial",
+      "tutor": "Nana Abena",
+      "tutorImage": "images/pic-5.jpg",
+      "thumbnail": "images/thumb-4.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "5",
+      "title": "complete JQuery tutorial",
+      "tutor": "Emeka Azu",
+      "tutorImage": "images/pic-6.jpg",
+      "thumbnail": "images/thumb-5.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "6",
+      "title": "complete SASS tutorial",
+      "tutor": "Chike Okeke",
+      "tutorImage": "images/pic-7.jpg",
+      "thumbnail": "images/thumb-6.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "7",
+      "title": "complete PHP tutorial",
+      "tutor": "Somto Marvel",
+      "tutorImage": "images/pic-8.jpg",
+      "thumbnail": "images/thumb-7.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "8",
+      "title": "complete MySQL tutorial",
+      "tutor": "Fiona Ife",
+      "tutorImage": "images/pic-9.jpg",
+      "thumbnail": "images/thumb-8.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    },
+    {
+      "id": "9",
+      "title": "complete react tutorial",
+      "tutor": "John Dee",
+      "tutorImage": "images/pic-1.jpg",
+      "thumbnail": "images/thumb-9.png",
+      "videos": 10,
+      "date": "21-10-2025"
+    }
+  ],
+  "comments": [
+    {
+      "id": "7517",
+      "videoId": "vid-0",
+      "userId": "1742860643106",
+      "text": "bcfbeberv",
+      "createdAt": "2025-04-01T12:46:11.219Z",
+      "courseId": "1"
+    }
+  ]
+}

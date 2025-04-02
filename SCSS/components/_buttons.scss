@@ -1,0 +1,86 @@
+.inline-btn,
+.inline-option-btn,
+.inline-delete-btn,
+.btn, .delete-comment-btn, .edit-comment-btn, .save-edit-btn,
+.delete-btn, .cancel-edit-btn,
+.option-btn{
+    border-radius: .5rem;
+    color: $white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding:1rem 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn,
+.delete-btn,
+.option-btn{
+    display: block;
+    width: 100%;
+}
+
+.inline-btn,
+.inline-option-btn, .edit-comment-btn, .delete-comment-btn, .save-edit-btn, .cancel-edit-btn,
+.inline-delete-btn{
+    display: inline-block;
+}
+
+.inline-btn{
+    background-color: $orange;
+}
+
+.option-btn,
+.inline-option-btn, .edit-comment-btn{
+    background-color: $orange;
+}
+
+.delete-btn,
+.inline-delete-btn, .delete-comment-btn, .save-edit-btn{
+    background-color: $red;
+}
+
+.inline-btn:hover,
+.inline-option-btn:hover,
+.inline-delete-btn:hover, .edit-comment-btn:hover, .save-edit-btn:hover,
+.btn:hover, .delete-comment-btn:hover, .cancel-edit-btn:hover, 
+.delete-btn:hover,
+.option-btn:hover{
+    background-color: $black;
+    color: $white;
+}
+
+.flex-btn{
+    display: flex;
+    gap: 1rem;
+}
+
+#search-btn{
+    display: none;
+}
+
+.btn, .enroll-btn{
+    background-color: $red;
+}
+
+.unenroll-btn, .delete-comment-btn, 
+.cancel-edit-btn{
+    background: $wine;
+}
+
+.enroll-btn, .unenroll-btn {
+    padding: 1rem 1.5rem;
+    background: $red;
+    color: $white;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    margin: 2rem;
+}
+
+.enroll-btn:hover, .unenroll-btn:hover {
+    background: $black;
+    color: $white;
+    cursor: pointer;
+}

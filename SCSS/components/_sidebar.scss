@@ -1,0 +1,105 @@
+.side-bar{
+    position: fixed;
+    top: 0; left: 0;
+    width: 30rem;
+    background-color: $main-color;
+    height: 100vh;
+    border-right: $border;
+    z-index: 1200;
+}
+
+.side-bar #close-btn{
+    text-align: right;
+    padding: 2rem;
+    display: none;
+}
+
+.side-bar #close-btn i{
+    text-align: right;
+    font-size: 2.5rem;
+    background: $wine;
+    border-radius: .5rem;
+    color:$white;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.side-bar #close-btn i:hover{
+    background-color: $black;
+}
+
+.side-bar .profile{
+    padding:3rem 2rem;
+    text-align: center;
+}
+
+.side-bar .profile .image{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.side-bar .profile .name{
+    font-size: 2rem;
+    color:$white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.side-bar .profile .role{
+    font-size: 1.8rem;
+    color: $light-bg;
+}
+
+.side-bar .navbar a{
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.side-bar .navbar a i{
+    margin-right: 1.5rem;
+    color:$white;
+    transition: .2s linear;
+}
+
+.side-bar .navbar a span{
+    color:$white;
+}
+
+.side-bar .navbar a:hover{
+    background-color: $black;
+}
+
+.side-bar .navbar a:hover i{
+    margin-right: 2.5rem;
+}
+
+.side-bar.active{
+    left: -30rem;
+}
+
+.side-bar{
+        // components/_sidebar.scss
+    // In your existing _sidebar.scss or _navigation.scss
+    .navbar {
+        a {
+        transition: all 0.3s ease;
+        
+            &.active {
+                background: $white;
+                color: $main-color;
+                
+                i, span {
+                color: $main-color;
+                }
+            }
+        }
+    }
+}

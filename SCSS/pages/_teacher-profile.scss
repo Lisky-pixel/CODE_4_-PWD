@@ -1,0 +1,44 @@
+.teacher-profile .details{
+    text-align: center;
+    background-color: $white;
+    border-radius: .5rem;
+    padding: 2rem;
+ }
+ 
+ .teacher-profile .details .tutor img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+ }
+ 
+ .teacher-profile .details .tutor h3{
+    font-size: 2rem;
+    color: $main-color;
+ }
+ 
+ .teacher-profile .details .tutor span{
+    color: $light-color;
+    font-size: 1.7rem;
+ }
+ 
+ .teacher-profile .details .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+ }
+ 
+ .teacher-profile .details .flex p{
+    flex: 1 1 20rem;
+    border-radius: .5rem;
+    background-color: $light-bg;
+    padding: 1.2rem 2rem;
+    font-size: 1.8rem;
+    color: $light-color;
+ }
+ 
+ .teacher-profile .details .flex p span{
+    color: $main-color;
+ }

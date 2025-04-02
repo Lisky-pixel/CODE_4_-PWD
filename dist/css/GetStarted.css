@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: #ffffff;
+  display: grid;
+  place-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 850px;
+  height: 500px;
+  background-color: white;
+  border: 2px solid #023047;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.container .form-container {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 0 40px;
+  transition: all 0.6s ease-in-out;
+}
+.container .form-container.sign-up-container {
+  opacity: 0;
+  z-index: 1;
+}
+.container .form-container.sign-in-container {
+  z-index: 2;
+}
+.container .form-container form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+.container .form-container form h1 {
+  color: #023047;
+}
+.container .form-container form .social-container {
+  margin: 20px 0;
+}
+.container .form-container form .social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+.container .form-container form span {
+  font-size: 12px;
+}
+.container .form-container form .infield {
+  position: relative;
+  margin: 8px 0;
+  width: 100%;
+}
+.container .form-container form .infield input {
+  width: 100%;
+  padding: 12px 8px;
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+}
+.container .form-container form .infield input:focus ~ label {
+  width: 100%;
+}
+.container .form-container form .infield label {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #141E30, #243B55);
+  transition: 0.3s;
+}
+.container .form-container form a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.container .form-container form a.forgot {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #EEE;
+}
+.container .form-container form button {
+  border-radius: 20px;
+  border: 1px solid #141E30;
+  background: #243B55;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 17px;
+  transition: 80ms ease-in;
+}
+.container .form-container form button:hover {
+  background: #FFF;
+  color: #141E30;
+}
+.container .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 9;
+}
+.container .overlay-container #overlayBtn {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 304px;
+  transform: translateX(-50%);
+  width: 143.67px;
+  height: 40px;
+  border: 1px solid #FFF;
+  background: transparent;
+  border-radius: 20px;
+}
+.container .overlay-container .overlay {
+  position: relative;
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #fff;
+  left: -150%;
+  height: 100%;
+  width: 250%;
+  transition: transform 0.6s ease-in-out;
+}
+.container .overlay-container .overlay .overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  height: 100%;
+  width: 340px;
+  transition: 0.6s ease-in-out;
+}
+.container .overlay-container .overlay .overlay-panel h1 {
+  color: #fff;
+}
+.container .overlay-container .overlay .overlay-panel p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 25px 0 56px;
+}
+.container .overlay-container .overlay .overlay-panel button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 143.67px;
+  height: 40px;
+  background: #243B55;
+  border-radius: 20px;
+}
+.container .overlay-container .overlay .overlay-panel button:hover {
+  color: #243B55;
+  background-color: #fff;
+}
+.container .overlay-container .overlay .overlay-left {
+  right: 60%;
+  transform: translateX(-12%);
+}
+.container .overlay-container .overlay .overlay-right {
+  right: 0;
+  transform: translateX(0%);
+}/*# sourceMappingURL=GetStarted.css.map */

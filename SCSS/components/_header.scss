@@ -1,0 +1,111 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+    z-index: 1000;
+    border-bottom: $border;
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1.5rem 2rem;
+
+        .logo {
+            height: 4.5rem;
+            padding: 1rem 0;
+        }
+    
+        .search-form {
+                width: 45%;
+                border-radius: 0.5rem;
+                background-color: $light-bg;
+                padding: 1rem 2rem;
+                display: flex;
+                gap: 2rem;
+    
+            input {
+                width: 100%;
+                font-size: 1.8rem;
+                color: $main-color;
+                background: none;
+            }
+    
+            button {
+                background: none;
+                font-size: 2rem;
+                cursor: pointer;
+                color: $main-color;
+    
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    
+        .icons {
+            div {
+                font-size: 1.5rem;
+                color: $main-color;
+                background-color: $light-bg;
+                border-radius: 5rem;
+                height: 4.5rem;
+                width: 4.5rem;
+                line-height: 4.5rem;
+                cursor: pointer;
+                text-align: center;
+                margin-left: 0.7rem;
+    
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+        }
+    
+        .profile {
+            position: absolute;
+            top: 120%;
+            right: 2rem;
+            background-color: $white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-align: center;
+            overflow: hidden;
+            transform-origin: top right;
+            transform: scale(0);
+            transition: 0.2s linear;
+            width: 30rem;
+    
+            &.active {
+            transform: scale(1);
+            }
+    
+            .image {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            }
+    
+            .name {
+            font-size: 2rem;
+            color: $black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            }
+    
+            .role {
+            font-size: 1.8rem;
+            color: $light-color;
+            }
+        }
+    }
+}
+
+// components/_header.scss

@@ -1,0 +1,11 @@
+// Utility classes
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-1 { margin-top: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.hidden { display: none; }
+
+// Responsive visibility utilities
+@include respond-to($breakpoint-medium) {
+    .hide-md { display: none; }
+}
