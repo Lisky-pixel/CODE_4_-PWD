@@ -2,8 +2,8 @@
 
 Welcome to Code 4 PWD, a web application platform that Includes Coding and Design Platforms for Individuals with Hearing and Speech Impairments.
 
-<img width="440" alt="Landing page" src="[https://github.com/user-attachments/assets/41214213-7093-4356-9845-837b532b1df8](https://github.com/Lisky-pixel/CODE_4_-PWD/blob/main/Landing_page.png)"> 
-<img width="440" alt="Sign Up" src="[https://github.com/user-attachments/assets/83d4ab64-9728-46b8-9988-6b565de298d2](https://github.com/Lisky-pixel/CODE_4_-PWD/blob/main/Sign_up.png)">
+<img width="440" alt="Landing page" src="images/Landing_page.png"> 
+<img width="440" alt="Sign Up" src="images/Sign_up.png">
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Welcome to Code 4 PWD, a web application platform that Includes Coding and Desig
 
 CODE 4 PWD is a self-contained product designed to address the lack of accessible coding and design education for individuals with hearing and speech impairments. It is not part of an existing product or a replacement for another system but is an innovative solution tailored to meet the unique needs of its target users.
 
-<img width="1040" height="450" alt="Homepage" src="[https://github.com/user-attachments/assets/cacb2d56-318d-4d05-942d-9fa8fdc55469](https://github.com/Lisky-pixel/CODE_4_-PWD/blob/main/Dashboard.png)"> 
+<img width="1040" height="450" alt="Homepage" src="images/Dashboard.png"> 
 
 ## Features
 
@@ -47,7 +47,7 @@ CODE 4 PWD is a self-contained product designed to address the lack of accessibl
 2. Navigate to the project directory:
 
   ```bash
-     cd CODE_4_PWD
+     cd CODE_4_-PWD
   ```
 3. Install dependencies:
    ```bash
