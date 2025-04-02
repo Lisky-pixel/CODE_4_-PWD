@@ -53,7 +53,7 @@ CODE 4 PWD is a self-contained product designed to address the lack of accessibl
    ```bash
      npm install -g json-server
    ```
-4. Start the mock API server:
+4. Start the API server:
    ```bash
     json-server --watch db.json --port 3000
     ```
